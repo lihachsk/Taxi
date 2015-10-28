@@ -1,0 +1,3644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="taxiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ADDROBJ01">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ02">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ03">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ04">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ05">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ06">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ07">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ08">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ09">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ10">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ11">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ12">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ13">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ14">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ15">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ16">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ17">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ18">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ19">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ20">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ21">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ22">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ23">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ24">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ25">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ26">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ27">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ28">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ29">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ30">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ31">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ32">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ33">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ34">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ35">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ36">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ37">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ38">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ39">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ40">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ41">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ42">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ43">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ44">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ45">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ46">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ47">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ48">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ49">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ50">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ51">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ52">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ53">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ54">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ55">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ56">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ57">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ58">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ59">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ60">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ61">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ62">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ63">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ64">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ65">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ66">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ67">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ68">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ69">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ70">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ71">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ72">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ73">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ74">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ75">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ76">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ77">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ78">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ79">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ83">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ86">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ87">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ89">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ91">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ92">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="ADDROBJ99">
+    <Key>
+      <PropertyRef Name="AOGUID" />
+    </Key>
+    <Property Name="ACTSTATUS" Type="float" />
+    <Property Name="AOGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="AOID" Type="char" MaxLength="36" />
+    <Property Name="AOLEVEL" Type="float" />
+    <Property Name="AREACODE" Type="char" MaxLength="3" />
+    <Property Name="AUTOCODE" Type="char" MaxLength="1" />
+    <Property Name="CENTSTATUS" Type="float" />
+    <Property Name="CITYCODE" Type="char" MaxLength="3" />
+    <Property Name="CODE" Type="char" MaxLength="17" />
+    <Property Name="CURRSTATUS" Type="float" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="FORMALNAME" Type="char" MaxLength="120" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="NEXTID" Type="char" MaxLength="36" />
+    <Property Name="OFFNAME" Type="char" MaxLength="120" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="OPERSTATUS" Type="float" />
+    <Property Name="PARENTGUID" Type="char" MaxLength="36" />
+    <Property Name="PLACECODE" Type="char" MaxLength="3" />
+    <Property Name="PLAINCODE" Type="char" MaxLength="15" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="PREVID" Type="char" MaxLength="36" />
+    <Property Name="REGIONCODE" Type="char" MaxLength="2" />
+    <Property Name="SHORTNAME" Type="char" MaxLength="10" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STREETCODE" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="CTARCODE" Type="char" MaxLength="3" />
+    <Property Name="EXTRCODE" Type="char" MaxLength="4" />
+    <Property Name="SEXTCODE" Type="char" MaxLength="3" />
+    <Property Name="LIVESTATUS" Type="float" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="HOUSE61">
+    <Key>
+      <PropertyRef Name="HOUSEGUID" />
+    </Key>
+    <Property Name="AOGUID" Type="char" MaxLength="36" />
+    <Property Name="BUILDNUM" Type="char" MaxLength="10" />
+    <Property Name="ENDDATE" Type="date" />
+    <Property Name="ESTSTATUS" Type="float" />
+    <Property Name="HOUSEGUID" Type="char" MaxLength="36" Nullable="false" />
+    <Property Name="HOUSEID" Type="char" MaxLength="36" />
+    <Property Name="HOUSENUM" Type="char" MaxLength="10" />
+    <Property Name="STATSTATUS" Type="float" />
+    <Property Name="IFNSFL" Type="char" MaxLength="4" />
+    <Property Name="IFNSUL" Type="char" MaxLength="4" />
+    <Property Name="OKATO" Type="char" MaxLength="11" />
+    <Property Name="OKTMO" Type="char" MaxLength="11" />
+    <Property Name="POSTALCODE" Type="char" MaxLength="6" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="STRUCNUM" Type="char" MaxLength="10" />
+    <Property Name="STRSTATUS" Type="float" />
+    <Property Name="TERRIFNSFL" Type="char" MaxLength="4" />
+    <Property Name="TERRIFNSUL" Type="char" MaxLength="4" />
+    <Property Name="UPDATEDATE" Type="date" />
+    <Property Name="NORMDOC" Type="char" MaxLength="36" />
+    <Property Name="COUNTER" Type="float" />
+  </EntityType>
+  <EntityContainer Name="taxiModelStoreContainer">
+    <EntitySet Name="ADDROBJ01" EntityType="Self.ADDROBJ01" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ02" EntityType="Self.ADDROBJ02" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ03" EntityType="Self.ADDROBJ03" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ04" EntityType="Self.ADDROBJ04" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ05" EntityType="Self.ADDROBJ05" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ06" EntityType="Self.ADDROBJ06" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ07" EntityType="Self.ADDROBJ07" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ08" EntityType="Self.ADDROBJ08" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ09" EntityType="Self.ADDROBJ09" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ10" EntityType="Self.ADDROBJ10" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ11" EntityType="Self.ADDROBJ11" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ12" EntityType="Self.ADDROBJ12" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ13" EntityType="Self.ADDROBJ13" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ14" EntityType="Self.ADDROBJ14" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ15" EntityType="Self.ADDROBJ15" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ16" EntityType="Self.ADDROBJ16" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ17" EntityType="Self.ADDROBJ17" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ18" EntityType="Self.ADDROBJ18" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ19" EntityType="Self.ADDROBJ19" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ20" EntityType="Self.ADDROBJ20" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ21" EntityType="Self.ADDROBJ21" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ22" EntityType="Self.ADDROBJ22" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ23" EntityType="Self.ADDROBJ23" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ24" EntityType="Self.ADDROBJ24" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ25" EntityType="Self.ADDROBJ25" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ26" EntityType="Self.ADDROBJ26" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ27" EntityType="Self.ADDROBJ27" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ28" EntityType="Self.ADDROBJ28" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ29" EntityType="Self.ADDROBJ29" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ30" EntityType="Self.ADDROBJ30" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ31" EntityType="Self.ADDROBJ31" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ32" EntityType="Self.ADDROBJ32" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ33" EntityType="Self.ADDROBJ33" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ34" EntityType="Self.ADDROBJ34" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ35" EntityType="Self.ADDROBJ35" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ36" EntityType="Self.ADDROBJ36" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ37" EntityType="Self.ADDROBJ37" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ38" EntityType="Self.ADDROBJ38" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ39" EntityType="Self.ADDROBJ39" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ40" EntityType="Self.ADDROBJ40" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ41" EntityType="Self.ADDROBJ41" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ42" EntityType="Self.ADDROBJ42" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ43" EntityType="Self.ADDROBJ43" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ44" EntityType="Self.ADDROBJ44" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ45" EntityType="Self.ADDROBJ45" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ46" EntityType="Self.ADDROBJ46" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ47" EntityType="Self.ADDROBJ47" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ48" EntityType="Self.ADDROBJ48" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ49" EntityType="Self.ADDROBJ49" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ50" EntityType="Self.ADDROBJ50" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ51" EntityType="Self.ADDROBJ51" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ52" EntityType="Self.ADDROBJ52" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ53" EntityType="Self.ADDROBJ53" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ54" EntityType="Self.ADDROBJ54" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ55" EntityType="Self.ADDROBJ55" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ56" EntityType="Self.ADDROBJ56" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ57" EntityType="Self.ADDROBJ57" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ58" EntityType="Self.ADDROBJ58" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ59" EntityType="Self.ADDROBJ59" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ60" EntityType="Self.ADDROBJ60" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ61" EntityType="Self.ADDROBJ61" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ62" EntityType="Self.ADDROBJ62" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ63" EntityType="Self.ADDROBJ63" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ64" EntityType="Self.ADDROBJ64" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ65" EntityType="Self.ADDROBJ65" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ66" EntityType="Self.ADDROBJ66" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ67" EntityType="Self.ADDROBJ67" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ68" EntityType="Self.ADDROBJ68" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ69" EntityType="Self.ADDROBJ69" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ70" EntityType="Self.ADDROBJ70" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ71" EntityType="Self.ADDROBJ71" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ72" EntityType="Self.ADDROBJ72" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ73" EntityType="Self.ADDROBJ73" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ74" EntityType="Self.ADDROBJ74" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ75" EntityType="Self.ADDROBJ75" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ76" EntityType="Self.ADDROBJ76" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ77" EntityType="Self.ADDROBJ77" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ78" EntityType="Self.ADDROBJ78" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ79" EntityType="Self.ADDROBJ79" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ83" EntityType="Self.ADDROBJ83" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ86" EntityType="Self.ADDROBJ86" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ87" EntityType="Self.ADDROBJ87" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ89" EntityType="Self.ADDROBJ89" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ91" EntityType="Self.ADDROBJ91" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ92" EntityType="Self.ADDROBJ92" Schema="path" store:Type="Tables" />
+    <EntitySet Name="ADDROBJ99" EntityType="Self.ADDROBJ99" Schema="path" store:Type="Tables" />
+    <EntitySet Name="HOUSE61" EntityType="Self.HOUSE61" Schema="path" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

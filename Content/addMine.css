@@ -1,0 +1,45 @@
+﻿.main-content{
+    padding-top:2em;
+}
+html,body{
+    min-width:515px;
+}
+.your-city{
+    position:absolute;
+    padding:0;
+}
+.dropdown.dropdown-toggle{
+    z-index: 1;
+}
+.dropdown.dropdown-menu{
+    z-index: 1;
+}
+.dw {
+    position: fixed;
+    display: none;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: black;
+}
+.q{
+    display:none;
+    position:absolute;
+    background-image:linear-gradient(180deg, lightgray, #fff);
+    border-radius:5px;
+    white-space: nowrap;
+    padding-left:2px;
+    margin-left: 170px;
+    top:0;
+}
+.background{
+    background-image:linear-gradient(0deg, #000,#FFC405, #000);
+}
+.background1{
+    background-image:linear-gradient(90deg, #000,#FFC405, #000);
+}
+.ymaps-2-1-29-map-ru{
+    border:solid #FFC405 2px;
+    border-radius:5px;
+}

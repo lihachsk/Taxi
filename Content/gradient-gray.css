@@ -1,0 +1,12 @@
+﻿.collapse-menu{
+    background-image:linear-gradient(180deg, darkgray, #fff);
+}
+.btn-gray{
+    background-image:linear-gradient(180deg, lightgray, #fff);
+}
+.left-grad{
+    background-image:linear-gradient(90deg, wight, yellow);
+}
+.right-grad{
+    background-image:linear-gradient(90deg, yellow, wight);
+}

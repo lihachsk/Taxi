@@ -1,0 +1,284 @@
+﻿html,body {
+    width:100%;
+    /*position:fixed;*/
+    background:#f0f3f5;
+    color:#428bca;
+    overflow:auto;
+    min-width:350px;
+    padding:0;
+    background: rgb(241, 241, 241);
+	font-size: 10px;
+    line-height: 1.7em;
+	font-family: 'Lucida Grande', Helvetica, Arial, Verdana, sans-serif;
+    color: rgb(51, 51, 51);
+}
+i
+{
+    font-size:14px;
+}
+.accountbox
+{
+	padding: 24px 24px 0px;
+    border: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    box-shadow: rgb(210, 210, 210) 1px 0px 0px 0px, rgb(210, 210, 210) -1px 0px 0px 0px, rgb(182, 182, 182) 0px 1px 0px 0px, rgb(210, 210, 210) 0px 2px 0px 0px, rgb(230, 230, 230) 2px 0px 0px 0px, rgb(230, 230, 230) -2px 0px 0px 0px, rgb(230, 230, 230) 0px 3px 0px 0px, rgb(230, 230, 230) 0px -1px 0px 0px;
+    background: white;
+    border-radius: 4px;
+    margin: 0px 0px 8px;
+    position: relative;	
+}
+.inlblck{
+    display:inline-block;
+}
+.text
+{
+    font-size: 18px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 24px;
+    font-family: 'Lucida Grande', Helvetica, Arial, Verdana, sans-serif;
+    color: rgb(51, 51, 51);
+
+}
+.dw-hide{
+    display:none;
+}
+.dw-show {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background:none;
+    text-align:center;
+    vertical-align:central;
+}
+.dw-show-opacity{
+    position: fixed;
+    display: block;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: black;
+}
+.dw-show-message
+{
+    width:400px;
+    border-radius:5px;
+    background:white;
+    top:50%;
+    margin-top:-200px;
+    margin-left:-200px;
+    padding:50px;
+    position:absolute;
+    display:inline-block;
+    z-index:11;
+}
+.cntr{
+    border-radius:5px;
+    border:1px solid #f1f1f1;
+    background:white;
+}
+.pw100{
+    width:100%;
+}
+.ph100{
+    height:100%;
+}
+.rowimg{
+    padding-top:5px;
+    background:url(/Images/row.png) repeat-x;
+}
+.head{
+    /*color:#939393;*/
+    font:50px 'Open Sans', sans-serif;
+    color:#3a87ad;
+}
+.btn-menu {
+    border-color: #f0f3f5;
+    color: #3a87ad;
+    background: linear-gradient(to bottom, #ecf5fa 0%,#bfddec 100%);
+      /*color: #737272;
+      background-color: #f0f3f5;
+      
+      font-size:14px;
+
+        margin:0px;
+        padding:5px;
+        box-shadow: inset 1px 1px 1px rgba(0,0,0,0.3);
+
+      */
+}
+.btn-menu:hover
+{
+    background-color: #ffffff;
+}
+.hidden{
+    display:none;
+}
+.text-info,.text-comment,.text-num{
+    box-shadow: rgb(170, 170, 170) 0px 1px 4px inset;
+    border: 1px solid rgb(214, 214, 214);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    padding-left: 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 327px;
+    height: 21px;
+    line-height: 24px;
+    padding: 7px 2px 7px 10px;
+    box-sizing: content-box;
+}
+.text-comment
+{
+}
+input.text-num {
+}
+
+div.text-info{
+    border:none;
+    color:#3a87ad;
+    box-shadow:none;
+}
+.bckgrnd{
+    width:100%;
+    opacity:0.35;
+    position:absolute;
+}
+img.bckgrnd{
+    width:100%;
+}
+.btn-link
+{
+    margin:0 10px;
+}
+.col-lg-12 menu row{
+    margin:10px 0;
+}
+.mrg
+{
+    margin:10px 0;
+}
+.page-header{
+        margin-bottom:0px;
+    }
+.yourTown{
+    margin-top: 10px;
+    position:absolute;
+    font-size:14px;
+}
+.q{
+    width: 240px;
+    display:none;
+    position:absolute;
+    background-image:linear-gradient(180deg, lightgray, #fff);
+    border-radius:5px;
+    white-space: nowrap;
+    padding-left:2px;
+    margin-left: 170px;
+    top:0;
+}
+.ymaps-2-1-29-map-ru
+{
+    border: 2px solid #bfddec;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.map
+{
+    padding:0px 10px;
+}
+.listsearch
+{
+    position:absolute;
+    margin-top:0px;
+    line-height:1.4;
+    min-width:196px;
+    z-index:1;
+}
+ul.listsearch li
+{
+    padding:5px;
+    cursor:pointer;
+}
+.rel
+{
+    display: inline-block;
+    position:relative;
+    vertical-align: middle;
+}
+div.text-info{
+    background:none;
+}
+@media (max-width: 767px) {
+    .menu{
+    padding:0px 20px;
+    height:500px;
+}
+    .yourTown
+    {
+        margin-top:75px;
+        z-index:1;
+    }
+    .q{
+        width:149px;
+    }
+    .ok,.no{
+        width:50%;
+    }
+    .menu-xs
+    {
+        padding-top:40px;
+    }
+    .menu-top{
+        z-index:2;
+        position:absolute;
+        margin-top:-50px;
+    }
+    button.btn-menu{
+        width:100%;
+    }
+    .slider
+    {
+        width:0px;
+        overflow:hidden;
+    }
+    .slider-on
+    {
+        width:201px;
+        overflow:hidden;
+    }
+    .text-comment{
+        width:100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu{
+    padding:0px 30px;
+    height:500px;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menu{
+    padding:0px 30px;
+    height:500px;
+}
+}
+@media (min-width: 1200px) {
+    .menu{
+    padding:0px 30px;
+    height:500px;
+}
+}

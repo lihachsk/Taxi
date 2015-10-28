@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47052278-177B-4EE0-8945-B3F24FC1873B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Taxi</RootNamespace>
+    <AssemblyName>Taxi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=__MvcPagesVersion__, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADDROBJ.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ01.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ02.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ03.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ04.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ05.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ06.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ07.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ08.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ09.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ10.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ11.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ12.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ13.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ14.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ15.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ16.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ17.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ18.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ19.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ20.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ21.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ22.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ23.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ24.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ25.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ26.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ27.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ28.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ29.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ30.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ31.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ32.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ33.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ34.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ35.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ36.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ37.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ38.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ39.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ40.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ41.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ42.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ43.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ44.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ45.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ46.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ47.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ48.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ49.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ50.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ51.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ52.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ53.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ54.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ55.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ56.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ57.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ58.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ59.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ60.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ61.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ62.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ63.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ64.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ65.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ66.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ67.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ68.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ69.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ70.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ71.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ72.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ73.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ74.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ75.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ76.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ77.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ78.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ79.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ83.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ86.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ87.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ89.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ91.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ92.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDROBJ99.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AjaxController.cs" />
+    <Compile Include="Controllers\FunctionController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HOUSE61.cs">
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaxiModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="taxi.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>taxi.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="taxi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>taxi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="taxi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>taxi.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\addMine.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\gradient-gray.css" />
+    <Content Include="Content\jquery.autocomplete.css" />
+    <Content Include="Content\jquery.selectspinner.css" />
+    <Content Include="Content\new.css" />
+    <Content Include="Content\pageOrder.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="favicon1.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\m3-front.jpg" />
+    <Content Include="Images\menu.png" />
+    <Content Include="Images\taxi.png" />
+    <Content Include="Scripts\ApiLocation.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.autocomplete.js" />
+    <Content Include="Scripts\jquery.selectspinner.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\pageOrder.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <EntityDeploy Include="taxi.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>taxi.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="taxi.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>taxi.edmx</DependentUpon>
+      <LastGenOutput>taxi.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="taxi.edmx.diagram">
+      <DependentUpon>taxi.edmx</DependentUpon>
+    </Content>
+    <Content Include="taxi.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>taxi.edmx</DependentUpon>
+      <LastGenOutput>taxi.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\Ajax\AjaxRequestCity.cshtml" />
+    <Content Include="Views\Ajax\RoutPath.cshtml" />
+    <Content Include="Views\Ajax\cityServer.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Ajax\OrderPath.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Function\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57688</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57688/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
