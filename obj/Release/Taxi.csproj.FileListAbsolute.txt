@@ -1,3 +1,4 @@
+C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.WebPages.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\Taxi.dll.config
 C:\Work\FileNet\C#\Taxi\Taxi\bin\Taxi.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\Taxi.pdb
@@ -5,7 +6,10 @@ C:\Work\FileNet\C#\Taxi\Taxi\bin\Antlr3.Runtime.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\EntityFramework.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\EntityFramework.SqlServer.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\Microsoft.Web.Infrastructure.dll
+C:\Work\FileNet\C#\Taxi\Taxi\bin\Mono.Security.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\Newtonsoft.Json.dll
+C:\Work\FileNet\C#\Taxi\Taxi\bin\Npgsql.dll
+C:\Work\FileNet\C#\Taxi\Taxi\bin\Npgsql.EntityFramework.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Net.Http.Formatting.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.Helpers.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.Http.dll
@@ -14,11 +18,12 @@ C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.Mvc.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.Optimization.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.Razor.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.WebPages.Deployment.dll
-C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.WebPages.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.WebPages.Razor.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\WebGrease.dll
 C:\Work\FileNet\C#\Taxi\Taxi\bin\EntityFramework.xml
 C:\Work\FileNet\C#\Taxi\Taxi\bin\EntityFramework.SqlServer.xml
+C:\Work\FileNet\C#\Taxi\Taxi\bin\Npgsql.xml
+C:\Work\FileNet\C#\Taxi\Taxi\bin\Npgsql.EntityFramework.xml
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Net.Http.Formatting.xml
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.Http.xml
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.Http.WebHost.xml
@@ -31,6 +36,12 @@ C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.WebPages.Deployment.xml
 C:\Work\FileNet\C#\Taxi\Taxi\bin\System.Web.WebPages.Razor.xml
 C:\Work\FileNet\C#\Taxi\Taxi\bin\Antlr3.Runtime.pdb
 C:\Work\FileNet\C#\Taxi\Taxi\bin\Newtonsoft.Json.xml
-C:\Work\FileNet\C#\Taxi\Taxi\obj\Release\Taxi.csprojResolveAssemblyReference.cache
+C:\Work\FileNet\C#\Taxi\Taxi\bin\de\Npgsql.resources.dll
+C:\Work\FileNet\C#\Taxi\Taxi\bin\es\Npgsql.resources.dll
+C:\Work\FileNet\C#\Taxi\Taxi\bin\fi\Npgsql.resources.dll
+C:\Work\FileNet\C#\Taxi\Taxi\bin\fr\Npgsql.resources.dll
+C:\Work\FileNet\C#\Taxi\Taxi\bin\ja\Npgsql.resources.dll
+C:\Work\FileNet\C#\Taxi\Taxi\bin\zh-CN\Npgsql.resources.dll
 C:\Work\FileNet\C#\Taxi\Taxi\obj\Release\Taxi.dll
 C:\Work\FileNet\C#\Taxi\Taxi\obj\Release\Taxi.pdb
+C:\Work\FileNet\C#\Taxi\Taxi\obj\Release\Taxi.csprojResolveAssemblyReference.cache

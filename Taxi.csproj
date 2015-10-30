@@ -39,13 +39,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Security">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net45\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql.EntityFramework">
+      <HintPath>..\packages\Npgsql.EntityFramework.2.2.7\lib\net45\Npgsql.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
@@ -128,267 +139,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADDROBJ.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ01.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ02.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ03.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ04.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ05.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ06.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ07.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ08.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ09.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ10.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ11.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ12.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ13.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ14.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ15.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ16.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ17.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ18.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ19.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ20.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ21.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ22.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ23.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ24.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ25.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ26.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ27.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ28.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ29.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ30.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ31.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ32.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ33.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ34.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ35.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ36.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ37.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ38.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ39.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ40.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ41.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ42.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ43.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ44.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ45.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ46.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ47.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ48.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ49.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ50.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ51.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ52.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ53.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ54.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ55.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ56.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ57.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ58.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ59.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ60.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ61.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ62.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ63.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ64.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ65.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ66.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ67.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ68.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ69.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ70.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ71.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ72.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ73.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ74.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ75.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ76.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ77.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ78.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ79.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ83.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ86.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ87.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ89.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ91.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ92.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADDROBJ99.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -398,26 +148,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="HOUSE61.cs">
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\TaxiModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="taxi.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>taxi.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="taxi.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>taxi.tt</DependentUpon>
-    </Compile>
-    <Compile Include="taxi.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>taxi.edmx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\addMine.css" />
@@ -471,23 +203,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
-    <EntityDeploy Include="taxi.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>taxi.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="taxi.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>taxi.edmx</DependentUpon>
-      <LastGenOutput>taxi.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="taxi.edmx.diagram">
-      <DependentUpon>taxi.edmx</DependentUpon>
-    </Content>
-    <Content Include="taxi.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>taxi.edmx</DependentUpon>
-      <LastGenOutput>taxi.cs</LastGenOutput>
-    </Content>
     <Content Include="Views\Ajax\AjaxRequestCity.cshtml" />
     <Content Include="Views\Ajax\RoutPath.cshtml" />
     <Content Include="Views\Ajax\cityServer.cshtml" />

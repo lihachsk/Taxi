@@ -203,8 +203,8 @@ namespace Taxi.Controllers
                 String reg = null;
                 try
                 {
-                    reg = db.ADDROBJ.Where(x => x.OFFNAME == parther && x.WORKSAREA == true)
-                        .Select(x => x.REGIONCODE)
+                    reg = db.addrobj61.Where(x => x.offname == parther && x.worksarea == true)
+                        .Select(x => x.regioncode)
                         .First();
                 }
                 catch (Exception ex)
@@ -217,9 +217,9 @@ namespace Taxi.Controllers
                     String cityServerVal = null;
                     try
                     {
-                        cityServerVal = db.ADDROBJ.Where(x => x.AOLEVEL == 4 && x.REGIONCODE == reg.ToString())
-                            .OrderByDescending(x => x.CENTSTATUS)
-                            .Select(x => x.OFFNAME)
+                        cityServerVal = db.addrobj61.Where(x => x.aolevel == 4 && x.regioncode == reg.ToString())
+                            .OrderByDescending(x => x.centstatus)
+                            .Select(x => x.offname)
                             .First()
                             .ToString().Trim();
                         Session["regioncode"] = cityServerVal;
@@ -255,19 +255,19 @@ namespace Taxi.Controllers
             switch(regioncode)
             {
                 case "Ростов-на-Дону": {
-                result = db.ADDROBJ61
+                result = db.addrobj61
                  .Join(
-                     db.ADDROBJ61
-                         .Select(y => new { y.AOGUID, y.FORMALNAME, y.SHORTNAME, y.WORKSAREA, y.AOLEVEL })
-                         .Where(y => y.WORKSAREA == true)
-                         .Where(y => y.AOLEVEL == 4),
-                         x => x.PARENTGUID,
-                         y => y.AOGUID,
+                     db.addrobj61
+                         .Select(y => new { y.aoguid, y.formalname, y.shortname, y.worksarea, y.aolevel })
+                         .Where(y => y.worksarea == true)
+                         .Where(y => y.aolevel == 4),
+                         x => x.parentguid,
+                         y => y.aoguid,
                          (x, y) => new res()
                          {
-                             name = x.FORMALNAME.Trim() + " " + x.SHORTNAME.Trim() + ".",
-                             city = ", " + y.FORMALNAME.Trim(),
-                             order = x.CENTSTATUS
+                             name = x.formalname.Trim() + " " + x.shortname.Trim() + ".",
+                             city = ", " + y.formalname.Trim(),
+                             order = x.centstatus
                          })
                  .OrderByDescending(x => x.order)
                  .Where(x => x.name.Contains(cityNameVal))
