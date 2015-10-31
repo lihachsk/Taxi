@@ -39,15 +39,15 @@ namespace Taxi.Controllers
                             var cost = getCost(distance);
                             var array = getErrors(points, data);
                             var te = totalError(array);
-                            return Json(new { status = 1, data = array, cost = cost, te = te });//Ошибка расчета пути на стороннем сервере Google
+                            return Json(new { status = 1, data = array, cost = cost, te = te }, JsonRequestBehavior.AllowGet);//Ошибка расчета пути на стороннем сервере Google
                         }
-                        return Json(new { status = 0, type = -4 });//Ошибка расчета пути на стороннем сервере Google
+                        return Json(new { status = 0, type = -4 }, JsonRequestBehavior.AllowGet);//Ошибка расчета пути на стороннем сервере Google
                     }
-                    return Json(new { status = 0, type = -3 });//пунктов меньше двух
+                    return Json(new { status = 0, type = -3 }, JsonRequestBehavior.AllowGet);//пунктов меньше двух
                 }
-                return Json(new { status = 0, type = -2 });//не удалось преобразовать параметры
+                return Json(new { status = 0, type = -2 }, JsonRequestBehavior.AllowGet);//не удалось преобразовать параметры
             }
-            return Json(new { status = 0, type = -1 });//переменная с параметрами пуста
+            return Json(new { status = 0, type = -1 }, JsonRequestBehavior.AllowGet);//переменная с параметрами пуста
         }
         public JsonResult OrderPath(string list)
         {
@@ -73,31 +73,31 @@ namespace Taxi.Controllers
                                     var cost = getCost(distance);
                                     var array = getErrors(points, data);
                                     var te = totalError(array);
-                                    return Json(new { status = 1, data = array, cost = cost, te = te });//Ошибка расчета пути на стороннем сервере Google
+                                    return Json(new { status = 1, data = array, cost = cost, te = te }, JsonRequestBehavior.AllowGet);//Ошибка расчета пути на стороннем сервере Google
                                 }
-                                return Json(new { status = 0, type = -4 });//Ошибка расчета пути на стороннем сервере Google
+                                return Json(new { status = 0, type = -4 }, JsonRequestBehavior.AllowGet);//Ошибка расчета пути на стороннем сервере Google
                             }
                         }
                         else
                         {
-                            return Json(new { status = 0, type = -6 });
+                            return Json(new { status = 0, type = -6 }, JsonRequestBehavior.AllowGet);
                         }
                     }
                     else
                     {
-                        return Json(new { status = 0, type = -5 });
+                        return Json(new { status = 0, type = -5 }, JsonRequestBehavior.AllowGet);
                     }
-                    return Json(new { status = 0, type = -3 });//пунктов меньше двух
+                    return Json(new { status = 0, type = -3 }, JsonRequestBehavior.AllowGet);//пунктов меньше двух
                 }
-                return Json(new { status = 0, type = -2 });//не удалось преобразовать параметры
+                return Json(new { status = 0, type = -2 }, JsonRequestBehavior.AllowGet);//не удалось преобразовать параметры
             }
-            return Json(new { status = 0, type = -1 });//переменная с параметрами пуста
+            return Json(new { status = 0, type = -1 }, JsonRequestBehavior.AllowGet);//переменная с параметрами пуста
         }
         public JsonResult cityServer(String city)
         {
             city = getCity(city);
             var status = getStatus(city);
-            return Json(new { status = status, city = city });
+            return Json(new { status = status, city = city }, JsonRequestBehavior.AllowGet);
         }
     }
 }
