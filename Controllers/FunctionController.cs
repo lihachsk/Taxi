@@ -179,20 +179,24 @@ namespace Taxi.Controllers
         }
         public string getRoutParametrs(string url)
         {
-            var request = WebRequest.Create(url);
+            string responseFromServer = "";
+            try
+            {
+                var request = WebRequest.Create(url);
 
-            request.Credentials = CredentialCache.DefaultCredentials;
+                request.Credentials = CredentialCache.DefaultCredentials;
 
-            var response = request.GetResponse();
-            var responseStatus = ((HttpWebResponse)response).StatusDescription;
-            var dataStream = response.GetResponseStream();
-            var reader = new StreamReader(dataStream);
-            var responseFromServer = reader.ReadToEnd();
-            var parther = TaxiModels.Serializer.Deseriaize(responseFromServer);
+                var response = request.GetResponse();
+                var responseStatus = ((HttpWebResponse)response).StatusDescription;
+                var dataStream = response.GetResponseStream();
+                var reader = new StreamReader(dataStream);
+                responseFromServer = reader.ReadToEnd();
 
-            reader.Close();
-            response.Close();
-
+                reader.Close();
+                response.Close();
+            }
+            catch (Exception ex)
+            { }
             return responseFromServer;
         }
         public String getCity(String city)
