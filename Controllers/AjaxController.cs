@@ -30,6 +30,10 @@ namespace Taxi.Controllers
                     if (url != null)
                     {
                         var responseFromServer = getRoutParametrs(url);
+                        if (responseFromServer.Contains("error"))
+                        {
+                            return Json(new { status = 0, type = -4, textError = responseFromServer }, JsonRequestBehavior.AllowGet);//Неведомая ошибка
+                        }
                         var parther = TaxiModels.Serializer.Deseriaize(responseFromServer);
 
                         if (parther != null && parther.status == "OK")

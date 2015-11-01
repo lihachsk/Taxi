@@ -196,7 +196,9 @@ namespace Taxi.Controllers
                 response.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                return "error: " + ex.Message;
+            }
             return responseFromServer;
         }
         public String getCity(String city)
