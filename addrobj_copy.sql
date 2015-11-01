@@ -14,5 +14,5 @@ SELECT actstatus, aoguid, aoid, aolevel, areacode, autocode, centstatus,
   FROM(select 
        ROW_NUMBER () over (partition by aoguid order by startdate desc, updatedate desc) as RwNo,
 	   *
-	   from path.addrobj ) src
+	   from public.addrobj ) src
 where src.RwNo = 1;

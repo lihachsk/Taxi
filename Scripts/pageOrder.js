@@ -287,7 +287,6 @@
             var jsonText = JSON.stringify(user.dataVal());
             $.ajax({
                 type: "POST",
-				contentType: "application/json; charset=utf-8",
                 url: "/Ajax/RoutPath",
                 data: { list: jsonText },
                 dataType: "json",

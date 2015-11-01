@@ -1,7 +1,7 @@
 ﻿-- Table: path.addrobj
 
 -- DROP TABLE path.addrobj;
-DROP TABLE path.addrobj;
+DROP TABLE public.addrobj;
 CREATE TABLE path.addrobj
 (
   actstatus smallint,
