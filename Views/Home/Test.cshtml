@@ -1,86 +1,105 @@
-﻿@Styles.Render("~/Content/pageOrder.css")
-@Scripts.Render("~/Scripts/pageOrder.js")
-<div class="row relative">
-    <div class="black"></div>
-    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
-    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
-        <div class="col-xs-1 menu-item visible-xs"><i class="glyphicon-animate glyphicon glyphicon-menu-hamburger"></i></div>
-        <div class="col-sm-2 col-xs-5 menu-item menu-item-line">
-            <div class="dropdown">
-                <i class="dropdown-toggle glyphicon glyphicon-home glyphicon-button" data-toggle="dropdown" id="city"> Ваш город</i>
-                <ul class="dropdown-menu fallDownMenu">
-                    <li class="look-up"></li>
-                    <li><a class="city" city="78" href="#">Санкт-Петербург</a></li>
-                    <li><a class="city" city="61" href="#">Ростов-на-Дону</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-2 menu-item menu-item-line hidden-xs">Online заказ</div>
-        <div class="col-sm-2 menu-item menu-item-line hidden-xs">Ваш заказ</div>
-        <div class="col-sm-2 menu-item menu-item-line hidden-xs">История</div>
-        <div class="col-sm-2 menu-item menu-item-line hidden-xs">Контакты</div>
-        <div class="col-sm-2 col-xs-6 menu-item">Авторизация</div>
+﻿<style>
+    /* = Общие стили
+************************/
+body {
+	padding: 0 0 50em 0;
+	margin: 0;
+	font: 14px/1.8 Helvetica, Arial;
+	color: #444;
+	background-color: #f3f3f3;
+}
+a {text-decoration: none;}
+
+/* =Стили для header'а
+************************/
+#header {
+	display: block;
+	margin: 0; 
+	background: #f9f9f9;
+}		
+.back { font:normal 3em 'Agency FB'; color: #0074A3; position:absolute; top: 10px; right: 10%;}
+.back:hover {text-decoration: underline;}
+#header h1 {margin: 0 0 0 2em;}
+#header h1 a { display: inline-block; font: normal 3em 'Agency FB'; text-decoration: none; }
+.how { color: #990000; }
+.to { color: #0074A3; }
+.make { color: #006600; }
+.demo { font: normal 2em 'Agency FB';}
+
+/* Main	*/
+#main {
+	width: 94%;
+	padding: 1% 3%;
+}
+#main h2 { 
+	text-align: center;
+	font: 2.2em Helvetica, Arial; 
+	margin: 20px 0 10px 0;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #444444; 
+}
+.phone_form {
+	width: 300px;
+	margin: 50px auto;
+	position: relative;
+}
+#user_phone {
+	width: 300px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px 8px 8px 36px;
+	height: 40px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	color: #363636;
+}
+#user_phone:focus {
+	outline: none;
+	border-color: #363636;
+}
+input#user_phone:-moz-placeholder {
+	color: #363636;
+}
+input#user_phone::-webkit-input-placeholder {
+	color: #363636;
+}
+.user_phone {
+	position: relative;
+}
+.user_phone:before {
+	content: "+38";
+	display: block;
+	height: 40px;
+	color: #363636;
+	position: absolute;
+	top: 6px;
+	left: 7px;
+	font-size: 16px;
+}
+.btn_submit {
+	height: 30px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: #363636;
+	color: #fff;
+	border: none;
+	width: 120px;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.btn_submit.disabled {
+	color: #363636;
+	background: #ccc;
+}
+</style>
+
+    <div class="user_phone">
+        <input type="tel" required pattern="[0-9_-]{10}" placeholder="(___) ___ __ __" id="user_phone" title="Формат: (096) 999 99 99" />
     </div>
-    <div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
-</div>
-<div class="col-lg-3 col-md-2 col-sm-1 hidden-xs"></div>
-<div class="col-lg-6 col-md-8 col-sm-10 panel-parent">
-    <div class="panel-main">
-        <div class="header-main">
-            <h3 class="header-main-area">&nbsp;Форма заказа&nbsp;</h3>
-        </div>
-        <div class="box-line">
-            <div class="box">
-                <div class="box-points">
-                    <div class="item">
-                        <div class="item-move">
-                            <a class="item-move-down" href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                            <br />
-                            <a class="item-move-up" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                        </div>
-                        <input class="item-point item-tabindex" type="text" autocomplete="off" placeholder="Пункт отправления" tabindex="1" />
-                        <input class="item-num item-tabindex" type="text" autocomplete="off" placeholder="№ дома" tabindex="2" />
-                        <input class="item-porch item-tabindex" type="text" autocomplete="off" placeholder="№ подъезда" tabindex="3" />
-                        <a class="item-remove item-hidden" href="#"><i class="glyphicon glyphicon-minus-sign item-remove-style"></i></a>
-                    </div>
-                    <div class="item">
-                        <div class="item-move">
-                            <a class="item-move-down" href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                            <br />
-                            <a class="item-move-up" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                        </div>
-                        <input class="item-point item-tabindex" type="text" autocomplete="off" placeholder="Пункт отправления" tabindex="4" />
-                        <input class="item-num item-tabindex" type="text" autocomplete="off" placeholder="№ дома" tabindex="5" />
-                        <input class="item-porch item-tabindex" type="text" autocomplete="off" placeholder="№ подъезда" tabindex="6" />
-                        <a class="item-remove item-hidden" href="#"><i class="glyphicon glyphicon-minus-sign item-remove-style"></i></a>
-                    </div>
-                    <div class="item-add">
-                        <a class="item-add-point" href="#"><i class="glyphicon glyphicon-plus-sign"></i></a>
-                    </div>
-                </div>
-                <div class="box-comment">
-                    <div class="item-comment-pack"></div>
-                    <input class="item-comment item-tabindex" type="text" autocomplete="off" placeholder="Введите комментарий к заказу" tabindex="7" />
-                </div>
-                <div class="box-price">
-                    <div class="item-comment-pack hidden-xs"></div>
-                    <div class="item-price">
-                        <div class="item-price-text">&nbsp;Итого цена:&nbsp;</div>
-                        <div class="item-total">
-                            <div class="item-loader item-loader-hidden"><img src="~/Images/loading.gif" class="item-loader-img" /></div>
-                            <div class="item-price-cost">XXX</div>
-                            <div class="item-price-type">&nbsp;руб.</div>
-                        </div>
-                        <div class="item-price-button"><button class="btn price-button"><i class="glyphicon glyphicon-rub"></i> Рассчитать стоимость</button></div>
-                    </div>
-                </div>
-                <div class="box-submit">
-                    <div class="submit-area">
-                        &nbsp;<button class="btn submit-button"><i class="glyphicon glyphicon-envelope"></i> Заказать</button>&nbsp;
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-md-2 col-sm-1 hidden-xs"></div>
+
+    <input type="submit" class="btn_submit disabled" />
+

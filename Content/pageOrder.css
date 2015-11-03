@@ -302,7 +302,7 @@ button.price-button,.submit-button{
     border-image-repeat: initial;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset;
 }
-button.dw-button{
+button.dw-button, .reg-button{
     cursor: pointer;
     color: rgb(82, 155, 212);
     background: linear-gradient(#fff,#ebebeb);
@@ -343,7 +343,7 @@ button.city:hover {
 .dw-hide{
     display:none;
 }
-.dw-show {
+.dw-show, .reg-form {
     min-width:315px;
     min-height:480px;
     position: absolute;
@@ -353,7 +353,7 @@ button.city:hover {
     z-index: 10;
     background:none;
     text-align:center;
-    vertical-align:central;
+    vertical-align:middle;
 }
 .dw-show-opacity{
     position: fixed;
@@ -364,7 +364,7 @@ button.city:hover {
     z-index: 9;
     background-color: black;
 }
-.dw-show-message
+.dw-show-message, .reg-window
 {
     width: 400px;
     height: 200px;
@@ -382,25 +382,56 @@ button.city:hover {
     left: 0;
     margin: auto;
 }
-div.dw-button
+.reg-form-hide
+{
+    display:none;
+}
+.reg-form-opacity
+{
+    position: fixed;
+    display: block;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: gray;
+}
+div.dw-button, .reg-window-button
 {
     background-color:white;
     position:absolute;
     right:30px;
     bottom:5px;
 }
+.reg-window-tel::before
+{
+    content:"+7";
+}.reg-window-tel
+{
+    margin: 20px 0px 20px 10px;
+    text-align: left;
+}
+#reg-window-tel
+{
+    border:none;
+}
+#reg-window-tel:focus
+{
+    border:none;
+    outline:none !important;
+}
 .message-text
 {
     margin:0px;
 }
-.message-line-header
+.message-line-header, .reg-window-line-header
 {
     color:rgb(214, 214, 214);
     position:absolute;
     background-color:white;
     margin:-10px 0px 0px 15px;
 }
-.message-line
+.message-line, .reg-window-line
 {
     border: 1px solid rgb(214, 214, 214);
     border-radius: 2px;
@@ -445,7 +476,7 @@ div.dw-button
     {
         left:0px !important;
     }
-    .dw-show-message
+    .dw-show-message, .reg-window
     {
         width: 300px;
         height: 200px;

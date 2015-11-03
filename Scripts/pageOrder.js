@@ -1,5 +1,6 @@
 ﻿$(document).ready(function () {
     function user() {
+        var tel = $('#reg-window-tel');
         var ok = $('#ok');
         var city = $('#city');
         var cst = $('#cost');
@@ -132,6 +133,7 @@
             return fl;
         }
     }
+    //$('#reg-window-tel').mask("(999) 999-99-99");
     var myMap = null;
     ymaps.ready(function (e) {
         myMap = new ymaps.Map('map', {
