@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     function user() {
         var tel = $('#reg-window-tel');
+        var auth = $('#auth');
         var ok = $('#ok');
         var city = $('#city');
         var cst = $('#cost');
@@ -14,16 +15,41 @@
             comment: '',
             points: []
         }
-        ok.bind(
-            'click',
-            function (e) {
-                dialogWindow
-                    .addClass('dw-hide')
-                    .removeClass('dw-show');
-            })
+        var ofFunc = function (e) {
+            dialogWindow
+                .addClass('dw-hide')
+                .removeClass('dw-show');
+        }
+        var authFunc = function(e){
+            if($('div.reg-form-hide').length)
+            {
+                $('div.reg-form-hide').addClass('reg-form').removeClass('reg-form-hide');
+            }
+        }
+        ok.bind('click', ofFunc);
+        auth.bind('click', authFunc);
         itemTabindex.bind("keyup",function (e) {
             $(this).removeClass('item-error');
         })
+        this.authSubmit = function()
+        {
+            var telnum = jsonText({ tel: tel.val() });
+            $.ajax({
+                type: "POST",
+                url: "/Ajax/auth",
+                data: jsonText,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data, textStatus) {
+                    if (data.status == "OK") {
+                    }
+                    else {
+                        if (data.status == "FAIL") {
+                        }
+                    }
+                }
+            });
+        }
         this.costAdd = function (val) {
             cost = val;
         }
@@ -410,4 +436,58 @@
             });
         }
     });
+    if (!is_mobile()) {
+        if ($('#reg-window-tel').exists()) {
+            $('#reg-window-tel').each(function () {
+                $(this).mask("(999) 999-99-99");
+            });
+            $('#reg-window-tel')
+                .addClass('rfield')
+                .removeAttr('required')
+                .removeAttr('pattern')
+                .removeAttr('title')
+                .attr({ 'placeholder': '(___) ___ __ __' });
+        }
+        if ($('.reg-window').exists()) {
+
+            var form = $('.reg-window'),
+                btn = form.find('button.reg-button');
+
+            form.find('.rfield').addClass('empty_field');
+
+            setInterval(function () {
+
+                if ($('#reg-window-tel').exists()) {
+                    var pmc = $('#reg-window-tel');
+                    if ((pmc.val().indexOf("_") != -1) || pmc.val() == '') {
+                        pmc.addClass('empty_field');
+                    } else {
+                        pmc.removeClass('empty_field');
+                    }
+                }
+
+                var sizeEmpty = form.find('.empty_field').size();
+
+                if (sizeEmpty > 0) {
+                    if (btn.hasClass('disabled')) {
+                        return false
+                    } else {
+                        btn.addClass('disabled')
+                    }
+                } else {
+                    btn.removeClass('disabled')
+                }
+
+            }, 200);
+
+            btn.click(function () {
+                if ($(this).hasClass('disabled')) {
+                    return false
+                } else {
+                    user.authSubmit();
+                }
+            });
+
+        }
+    }
 });

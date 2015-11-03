@@ -386,6 +386,18 @@ button.city:hover {
 {
     display:none;
 }
+.reg-message {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+a.menu-link {
+    display:inline;
+    color:white;
+}
+a.menu-link:hover {
+    text-decoration:none;
+    color: #b5b5b5;
+}
 .reg-form-opacity
 {
     position: fixed;
@@ -408,12 +420,13 @@ div.dw-button, .reg-window-button
     content:"+7";
 }.reg-window-tel
 {
-    margin: 20px 0px 20px 10px;
-    text-align: left;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
 }
 #reg-window-tel
 {
     border:none;
+    width: 105px;
 }
 #reg-window-tel:focus
 {
@@ -426,7 +439,7 @@ div.dw-button, .reg-window-button
 }
 .message-line-header, .reg-window-line-header
 {
-    color:rgb(214, 214, 214);
+    color:rgb(191, 191, 191);
     position:absolute;
     background-color:white;
     margin:-10px 0px 0px 15px;

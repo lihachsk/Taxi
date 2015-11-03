@@ -6,13 +6,14 @@ using Taxi.Controllers;
 using System.Text.RegularExpressions;
 using System.Linq;
 using System.IO;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Taxi.Controllers
 {
     using Taxi.Models;
     public partial class AjaxController : Controller
     {
-        taxi db = new taxi();
         private int totalError(Array array)
         {
             var row = array.Rank;
@@ -31,7 +32,7 @@ namespace Taxi.Controllers
             return 1;
         }
 
-        private Array getErrors(List<string[]> points, TaxiModels.data data)
+        private Array getErrors(List<string[]> points, JsonModels.data data)
         {
             var it = points.Count;
             int[,] errors = new int[it, 3];
@@ -101,7 +102,7 @@ namespace Taxi.Controllers
             }
             return -1;
         }
-        public String getUrl(TaxiModels.data data)
+        public String getUrl(JsonModels.data data)
         {
             var destinations = "";
             var origins = "";
@@ -132,7 +133,7 @@ namespace Taxi.Controllers
             }
             return url + "&origins=" + origins + "&destinations=" + destinations;
         }
-        public int getDistance(TaxiModels.parserItem parther)
+        public int getDistance(JsonModels.parserItem parther)
         {
             var distance = 0;
             var row = parther.rows.Count();
@@ -153,7 +154,7 @@ namespace Taxi.Controllers
             }
             return distance;
         }
-        public List<String[]> getPoints(TaxiModels.parserItem parther)
+        public List<String[]> getPoints(JsonModels.parserItem parther)
         {
             List<String[]> points = new List<String[]>();
             var row = parther.destination_addresses.Count();
@@ -209,9 +210,12 @@ namespace Taxi.Controllers
                 String reg = null;
                 try
                 {
-                    reg = db.addrobj61.Where(x => x.offname == parther && x.worksarea == true)
+                    using (taxi db = new taxi())
+                    {                     
+                        reg = db.addrobj61.Where(x => x.offname == parther && x.worksarea == true)
                         .Select(x => x.regioncode)
                         .First();
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -223,11 +227,14 @@ namespace Taxi.Controllers
                     String cityServerVal = null;
                     try
                     {
-                        cityServerVal = db.addrobj61.Where(x => x.aolevel == 4 && x.regioncode == reg.ToString())
-                            .OrderByDescending(x => x.centstatus)
-                            .Select(x => x.offname)
-                            .First()
-                            .ToString().Trim();
+                        using (taxi db = new taxi())
+                        {
+                            cityServerVal = db.addrobj61.Where(x => x.aolevel == 4 && x.regioncode == reg.ToString())
+                                .OrderByDescending(x => x.centstatus)
+                                .Select(x => x.offname)
+                                .First()
+                                .ToString().Trim();
+                        }
                         Session["regioncode"] = cityServerVal;
                         return cityServerVal;
                     }
@@ -253,33 +260,52 @@ namespace Taxi.Controllers
             public String city { get; set; }
             public double? order { get; set; }
         }
+        static string FreeTest()
+        {
+            byte[] hash = Encoding.ASCII.GetBytes("194253766748fTanppCrNSeuYPbA4ENCo");
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] hashenc = md5.ComputeHash(hash);
+            string result = "";
+            foreach (var b in hashenc)
+            {
+                result += b.ToString("x2");
+            }
+            return result;
+        }
         public IEnumerable<res> getListAdress(String cityName)
         {
             String regioncode = Session["regioncode"].ToString();
             IEnumerable<res> result = null;
             var cityNameVal = Regex.Replace(cityName, "[^-:bА-я0-9/().,]*", "");
-            switch(regioncode)
+            if (cityNameVal.Length > 0)
             {
-                case "Ростов-на-Дону": {
-                result = db.addrobj61
-                 .Join(
-                     db.addrobj61
-                         .Select(y => new { y.aoguid, y.formalname, y.shortname, y.worksarea, y.aolevel })
-                         .Where(y => y.worksarea == true)
-                         .Where(y => y.aolevel == 4),
-                         x => x.parentguid,
-                         y => y.aoguid,
-                         (x, y) => new res()
-                         {
-                             name = x.formalname.Trim() + " " + x.shortname.Trim() + ".",
-                             city = ", " + y.formalname.Trim(),
-                             order = x.centstatus
-                         })
-                 .OrderByDescending(x => x.order)
-                 .Where(x => x.name.Contains(cityNameVal))
-                 .Take(10)
-                 .ToList();
-                } break;
+                switch (regioncode)
+                {
+                    case "Ростов-на-Дону":
+                        {
+                            using (taxi db = new taxi())
+                            {
+                                result = db.addrobj61
+                                 .Join(
+                                     db.addrobj61
+                                         .Select(y => new { y.aoguid, y.formalname, y.shortname, y.worksarea, y.aolevel })
+                                         .Where(y => y.worksarea == true)
+                                         .Where(y => y.aolevel == 4),
+                                         x => x.parentguid,
+                                         y => y.aoguid,
+                                         (x, y) => new res()
+                                         {
+                                             name = x.formalname.Trim() + " " + x.shortname.Trim() + ".",
+                                             city = ", " + y.formalname.Trim(),
+                                             order = x.centstatus
+                                         })
+                                 .OrderByDescending(x => x.order)
+                                 .Where(x => x.name.Contains(cityNameVal))
+                                 .Take(10)
+                                 .ToList();
+                            }
+                        } break;
+                }
             }
             return result;
         }
@@ -293,6 +319,29 @@ namespace Taxi.Controllers
             {
                 return "FAIL";
             }
+        }
+        public void writeLog(String msg)
+        {
+            try
+            {
+                //Добавить таблицу и запись в лог
+            }
+            catch
+            {
+            }
+        }
+        public int checkUser(String tel)
+        {
+            var parsTel = Regex.Replace(tel, "[^0-9]*", "");
+            if (parsTel.Length != 10)
+            {
+                return -1;
+            }
+            else
+            {
+                
+            }
+            return -1;
         }
     }
 }
