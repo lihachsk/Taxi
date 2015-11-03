@@ -77,25 +77,35 @@ namespace Taxi.Controllers
                                     var cost = getCost(distance);
                                     var array = getErrors(points, data);
                                     var te = totalError(array);
-                                    return Json(new { status = 1, data = array, cost = cost, te = te }, JsonRequestBehavior.AllowGet);//Ошибка расчета пути на стороннем сервере Google
+                                    if (te == 1) 
+                                    {
+                                        return Json(new { status = 1, type = 0, data = array, cost = cost, error = "" }, JsonRequestBehavior.AllowGet);//
+                                    }
+                                    else
+                                    {
+                                        return Json(new { status = 0, type = -7, data = array, error = "Ошибка в адресе." }, JsonRequestBehavior.AllowGet);//Ошибка расчета пути на стороннем сервере Google
+                                    }
                                 }
-                                return Json(new { status = 0, type = -4 }, JsonRequestBehavior.AllowGet);//Ошибка расчета пути на стороннем сервере Google
+                                return Json(new { status = 0, type = -6, error = "Ошибка построения пути." }, JsonRequestBehavior.AllowGet);//Ошибка расчета пути на стороннем сервере Google
+                            }
+                            else
+                            {
+                                return Json(new { status = 0, type = -5, error = "Не удалось построить маршрут. Параметров меньше двух." }, JsonRequestBehavior.AllowGet);
                             }
                         }
                         else
                         {
-                            return Json(new { status = 0, type = -6 }, JsonRequestBehavior.AllowGet);
+                            return Json(new { status = 0, type = -4, error = "Количество пунктов в пути меньше двух" }, JsonRequestBehavior.AllowGet);//пунктов меньше двух
                         }
                     }
                     else
                     {
-                        return Json(new { status = 0, type = -5 }, JsonRequestBehavior.AllowGet);
+                        return Json(new { status = 0, type = -3, error = "Не задан основной город. Выберите город из списка." }, JsonRequestBehavior.AllowGet);
                     }
-                    return Json(new { status = 0, type = -3 }, JsonRequestBehavior.AllowGet);//пунктов меньше двух
                 }
-                return Json(new { status = 0, type = -2 }, JsonRequestBehavior.AllowGet);//не удалось преобразовать параметры
+                return Json(new { status = 0, type = -2, error = "Не удалось разобрать параметры пути" }, JsonRequestBehavior.AllowGet);//не удалось преобразовать параметры
             }
-            return Json(new { status = 0, type = -1 }, JsonRequestBehavior.AllowGet);//переменная с параметрами пуста
+            return Json(new { status = 0, type = -1, error = "Не задан путь" }, JsonRequestBehavior.AllowGet);//переменная с параметрами пуста
         }
         public JsonResult cityServer(String city)
         {

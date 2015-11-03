@@ -65,7 +65,7 @@
                     dataType: "json",
                     success: function (data, textStatus) {
                         if (data.status == "OK") {
-                            user.setCity(data.city);
+                            //user.setCity(data.city);
                         }
                         else {
                             if (data.status == "FAIL") {
@@ -89,6 +89,7 @@
                     var geo = result.geoObjects.get(0);
                     if (geo != null) {
                         var resp = geo.properties.get('metaDataProperty');
+                        user.setCity(resp.GeocoderMetaData.AddressDetails.Country.AddressLine);
                         user.setCityServer(resp.GeocoderMetaData.AddressDetails.Country.AddressLine);
                     }
                     else {

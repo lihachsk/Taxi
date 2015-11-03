@@ -410,14 +410,25 @@ div.dw-button
     padding: 15px;
     overflow: hidden;
 }
+/*#city
+{
+    background-image:url(/Images/world.jpg);
+    background-size:16px 16px;
+    padding-left: 16px;
+    background-repeat:no-repeat;
+    background-position-x:left;
+    background-position-y:center;
+}*/
 @media (max-width: 768px) {
-    body{
-        background-size:1048px;
+    body
+    {
+        background-image: none;
+        background-color: rgb(10,84,171);
     }
     .menu-item
-{
-    padding-left: 8px;
-}
+    {
+        padding-left: 8px;
+    }
     .menu-xs-container {
         overflow:hidden;
         z-index: 3;

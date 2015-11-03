@@ -133,6 +133,22 @@ namespace Taxi
 
         public virtual DbSet<addrobj> addrobj { get; set; }
         public virtual DbSet<addrobj61> addrobj61 { get; set; }
+        public virtual DbSet<orders> orders { get; set; }
+
+    }
+    [Table("orders", Schema = "path")]
+    public partial class orders
+    {
+        [Key]
+        [Column(Order = 0)]
+        public int id { get; set; }
+        public DateTime timeOrder { get; set; }
+        public DateTime time { get; set; }
+        public string comment { get; set; }
+        public float cost { get; set; }
+        public int pointid { get; set; }
+        public int addid { get; set; }
+        public int status { get; set; }
 
     }
     [Table("addrobj", Schema = "path")]
