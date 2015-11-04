@@ -213,6 +213,7 @@
     <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Views\Ajax\OrderPath.cshtml" />
     <Content Include="Views\Ajax\auth.cshtml" />
+    <Content Include="Views\Ajax\authOk.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

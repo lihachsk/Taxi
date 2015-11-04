@@ -260,25 +260,76 @@ namespace Taxi.Controllers
             public String city { get; set; }
             public double? order { get; set; }
         }
-        static string FreeTest()
+
+        static string GetMd5Hash(string input)
         {
-            byte[] hash = Encoding.ASCII.GetBytes("194253766748fTanppCrNSeuYPbA4ENCo");
-            MD5 md5 = new MD5CryptoServiceProvider();
-            byte[] hashenc = md5.ComputeHash(hash);
-            string result = "";
-            foreach (var b in hashenc)
+            var md5Hash = MD5.Create();
+            // Convert the input string to a byte array and compute the hash.
+            byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
+
+            // Create a new Stringbuilder to collect the bytes
+            // and create a string.
+            StringBuilder sBuilder = new StringBuilder();
+
+            // Loop through each byte of the hashed data 
+            // and format each one as a hexadecimal string.
+            for (int i = 0; i < data.Length; i++)
             {
-                result += b.ToString("x2");
+                sBuilder.Append(data[i].ToString("x2"));
             }
-            return result;
+
+            // Return the hexadecimal string.
+            return sBuilder.ToString();
+        }
+
+        // Verify a hash against a string.
+        static bool VerifyMd5Hash(string input, string hash)
+        {
+            var md5Hash = MD5.Create();
+            // Hash the input.
+            string hashOfInput = GetMd5Hash(input);
+
+            // Create a StringComparer an compare the hashes.
+            StringComparer comparer = StringComparer.OrdinalIgnoreCase;
+
+            if (0 == comparer.Compare(hashOfInput, hash))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public string CreatePassword(int length)
+        {
+            const string valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+            StringBuilder res = new StringBuilder();
+            Random rnd = new Random();
+            while (0 < length--)
+            {
+                res.Append(valid[rnd.Next(valid.Length)]);
+            }
+            return res.ToString();
+        }
+        public static string CapText(Match m)
+        {
+            string x = m.ToString();
+            if (char.IsLower(x[0]))
+            {
+                return char.ToUpper(x[0]) + x.Substring(1, x.Length - 1);
+            }
+            return x;
         }
         public IEnumerable<res> getListAdress(String cityName)
         {
             String regioncode = Session["regioncode"].ToString();
             IEnumerable<res> result = null;
-            var cityNameVal = Regex.Replace(cityName, "[^-:bА-я0-9/().,]*", "");
+            string cityNameVal = Regex.Replace(cityName, "[^-:bА-я0-9/().,]*", "");
             if (cityNameVal.Length > 0)
             {
+                Regex rx = new Regex(@"\w+");
+                cityNameVal = rx.Replace(cityNameVal, new MatchEvaluator(AjaxController.CapText));
                 switch (regioncode)
                 {
                     case "Ростов-на-Дону":
@@ -339,9 +390,27 @@ namespace Taxi.Controllers
             }
             else
             {
-                
+                using (taxi db = new taxi())
+                {
+                    var user = db.users.Select(x => x.tel == tel).ToArray();
+                    if (user.Count() > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return -2;
+                    }
+                }
             }
-            return -1;
+        }
+        public int sendMsg(String tel)
+        {
+            var pass = CreatePassword(5);
+            string hashPass = GetMd5Hash(pass);
+            var fl = VerifyMd5Hash(pass, hashPass);
+            var url = "http://sms.ru/sms/send?api_id=5dd0221a-45f0-7f34-5d9c-4223cdf4ff72&to=7"+tel+"&text=prostotaxi.ru Ваш пароль: "+pass;
+            return 1;
         }
     }
 }

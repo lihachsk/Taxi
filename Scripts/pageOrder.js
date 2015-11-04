@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     function user() {
         var tel = $('#reg-window-tel');
+        var regExit = $('#reg-exit');
         var auth = $('#auth');
         var ok = $('#ok');
         var city = $('#city');
@@ -15,6 +16,11 @@
             comment: '',
             points: []
         }
+        var regExitFunc = function (e) {
+            if ($('div.reg-form').length) {
+                $('div.reg-form').addClass('reg-form-hide').removeClass('reg-form');
+            }
+        }
         var ofFunc = function (e) {
             dialogWindow
                 .addClass('dw-hide')
@@ -28,27 +34,51 @@
         }
         ok.bind('click', ofFunc);
         auth.bind('click', authFunc);
+        regExit.bind('click', regExitFunc);
         itemTabindex.bind("keyup",function (e) {
             $(this).removeClass('item-error');
         })
-        this.authSubmit = function()
-        {
-            var telnum = jsonText({ tel: tel.val() });
+        this.authSubmit = function () {
+            var telnum = JSON.stringify({ tel: tel.val() });
             $.ajax({
                 type: "POST",
                 url: "/Ajax/auth",
-                data: jsonText,
+                data: telnum,
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (data, textStatus) {
-                    if (data.status == "OK") {
-                    }
-                    else {
-                        if (data.status == "FAIL") {
-                        }
+                    switch (data.status) {
+                        case 1: user.authSubmitSuccess(); break;
+                        case -1: break;
+                        case -2: break;
+                        case -3: break;
+                        default: break;
                     }
                 }
             });
+        }
+        this.authSubmitOk = function () {
+            var code = JSON.stringify({ code: tel.val() });
+            $.ajax({
+                type: "POST",
+                url: "/Ajax/authOk",
+                data: code,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data, textStatus) {
+                    if (data.status == 1) {
+
+                    }
+                    else {
+                    }
+                }
+            });
+        }
+        this.authSubmitSuccess = function () {
+            $('div.reg-message').html('Вам отправлено смс с кодом.');
+            $('div.reg-window-tel').html('Введите код: <input type="tel" required pattern="[0-9a-Z]{5}" placeholder="#####" id="reg-window-tel" title="Формат: 99999" />');
+            $('#reg-window-tel').mask("*****");
+            $('div.reg-window-button').html('&nbsp;<button class="btn reg-button">Отправить</button>&nbsp;');
         }
         this.costAdd = function (val) {
             cost = val;

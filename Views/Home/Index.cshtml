@@ -15,13 +15,15 @@
     <div class="reg-form-opacity"></div>
     <div class="reg-window">
         <div class="reg-window-line-header">&nbsp;Окно регистрации&nbsp;</div>
+        <div class="reg-window-line-exit" id="reg-exit">&nbsp;X&nbsp;</div>
         <div class="reg-window-line">
             <div class="reg-window-message">
                 <div class="reg-message">Введите номер телефона</div>
                 <div class="reg-window-tel">
-                    <input type="tel" required pattern="[0-9_-]{10}" placeholder="(___) ___ __ __" id="reg-window-tel" title="Формат: (096) 999 99 99" />
-                </div>
-                
+                    <div class="reg-window-tel-befor">
+                        <input type="tel" required pattern="[0-9_-]{10}" placeholder="(___) ___ __ __" id="reg-window-tel" title="Формат: (096) 999 99 99" />
+                    </div>
+                </div>                
             </div>
         </div>
         <div class="reg-window-button">&nbsp;<button class="btn reg-button">Отправить</button>&nbsp;</div>

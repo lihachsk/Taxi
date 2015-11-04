@@ -144,16 +144,28 @@ namespace Taxi.Controllers
         }
         public JsonResult auth(String tel)
         {
+            return Json(new { status = 1 }, JsonRequestBehavior.AllowGet);
             try
             {
                 var status = checkUser(tel);
-                return Json(new { status = "" }, JsonRequestBehavior.AllowGet);
+                if (status == -2)
+                {
+                    var statusMsg = sendMsg(tel);
+                    return Json(new { status = status, statusMsg = statusMsg }, JsonRequestBehavior.AllowGet);
+                }
+                return Json(new { status = status }, JsonRequestBehavior.AllowGet);
             }
             catch(Exception ex)
             {
                 writeLog(ex.Message);
-                return Json(new { status = "" }, JsonRequestBehavior.AllowGet);
+                return Json(new { status = -3 }, JsonRequestBehavior.AllowGet);
             }
+        }
+        public JsonResult authOk(String code)
+        {
+            //var fl = VerifyMd5Hash(pass, hashPass);
+            return Json(new { status = 1, tel = "9515152001" }, JsonRequestBehavior.AllowGet);
+
         }
     }
 }

@@ -415,7 +415,7 @@ div.dw-button, .reg-window-button
     right:30px;
     bottom:5px;
 }
-.reg-window-tel::before
+.reg-window-tel-befor::before
 {
     content:"+7";
 }.reg-window-tel
@@ -444,6 +444,17 @@ div.dw-button, .reg-window-button
     background-color:white;
     margin:-10px 0px 0px 15px;
 }
+.reg-window-line-exit {
+    color:rgb(191, 191, 191);
+    position:absolute;
+    background-color:white;
+    right:3px;
+    top:3px;
+    cursor:pointer;
+}
+    .reg-window-line-exit:hover {
+        color: black;
+    }
 .message-line, .reg-window-line
 {
     border: 1px solid rgb(214, 214, 214);
